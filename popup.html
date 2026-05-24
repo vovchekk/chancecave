@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 280px;
+      padding: 15px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: #eee;
+      margin: 0;
+    }
+    h1 {
+      margin: 0 0 10px 0;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .subtitle {
+      font-size: 12px;
+      color: #888;
+      margin-bottom: 15px;
+    }
+    .status {
+      background: #2a9d8f;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      font-size: 13px;
+    }
+    .status.inactive {
+      background: #444;
+    }
+    .features {
+      font-size: 12px;
+      line-height: 1.8;
+    }
+    .features div {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .link {
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid #333;
+      font-size: 11px;
+      text-align: center;
+    }
+    .link a {
+      color: #2a9d8f;
+      text-decoration: none;
+    }
+    .link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>🐺 Wolf Cave Mapper</h1>
+  <div class="subtitle">Live auto-mapping for Wolf Game</div>
+  
+  <div class="status" id="status">
+    Navigate to caves.wolf.game to activate
+  </div>
+  
+  <div class="features">
+    <div>💎 Track shinies</div>
+    <div>⚡ Track hazards (traps/fences)</div>
+    <div>🪜 Track extraction points</div>
+    <div>🗺️ Heat map of explored tiles</div>
+    <div>📥 Export JSON for route planning</div>
+  </div>
+  
+  <div class="link">
+    <a href="https://chancethebettor.io" target="_blank">chancethebettor.io</a> | 
+    <a href="https://wolfgamecavemapper.com" target="_blank">Cave Mapper Tool</a>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
